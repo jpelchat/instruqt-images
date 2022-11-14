@@ -21,3 +21,13 @@ jobs:
           
       - name: Test Packer
         run: packer --help
+
+      - name: Create JSON
+        uses: jsdaniell/create-json@v1.2.1
+        with:
+          name: "instruqt.json"
+          json: ${{ secrets.GCP_KEY_FILE }}
+          
+      - name: Packer Build
+        run: packer build packer.json
+
