@@ -12,7 +12,7 @@
   "provisioners": [
     {
       "type": "shell-local",
-      "inline": ["apt install nginx -y"]
+      "inline": ["sudo apt install nginx -y"]
     }
   ]
 }
