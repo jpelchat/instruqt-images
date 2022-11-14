@@ -2,7 +2,7 @@
   "builders": [
     {
       "type": "googlecompute",
-      "account_file": "instruqt-gcp-credentials.json",
+      "account_file": "instruqt.json",
       "project_id": "instruqt-jacob",
       "source_image": "ubuntu-2204-jammy-v20221101a",
       "ssh_username": "packer",
