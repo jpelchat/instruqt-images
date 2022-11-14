@@ -9,7 +9,10 @@
       "zone": "us-central1-a"
     }
   ],
-  provisioner "shell-local" {
-    inline = ["apt install nginx -y"]
-  }
+  "provisioners": [
+    {
+      "type": "shell-local",
+      "inline": ["apt install nginx -y"]
+    }
+  ]
 }
