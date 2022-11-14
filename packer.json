@@ -10,10 +10,10 @@
     }
   ],
   "provisioners": [
-    {
-      "type": "file",
-      "source": "hello.txt",
-      "destination": "/tmp/hello.txt"
-    }
-  ],
+   {
+     "type": "file",
+     "source": "hello.txt",
+     "destination": "/tmp/hello.txt"
+     }
+     ]  
 }
