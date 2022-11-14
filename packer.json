@@ -9,11 +9,7 @@
       "zone": "us-central1-a"
     }
   ],
-  "provisioners": [
-   {
-     "type": "file",
-     "source": "hello.txt",
-     "destination": "/tmp/hello.txt"
-     }
-     ]  
+  provisioner "shell-local" {
+    inline = ["apt install nginx -y"]
+  }
 }
