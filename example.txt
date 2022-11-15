@@ -1,6 +1,0 @@
-################################
-This is an example file
-
-1. One line
-2. Another line
-3. Last line
