@@ -1,6 +1,6 @@
 variable "project_id" {
   type = string
-  default = "instruqt-support"
+  default = "instruqt-jacob"
 }
 
 variable "source_image" {
