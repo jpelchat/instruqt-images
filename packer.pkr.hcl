@@ -17,7 +17,7 @@ build {
   }
   
   provisioner "shell" {
-    inline = "apt update && apt install nginx -y"
+    inline = ["apt update && apt install nginx -y"]
   }
 
 }
