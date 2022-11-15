@@ -1,11 +1,11 @@
 source "googlecompute" "instruqt_image" {
   account_file = "instruqt.json"
-  project_id   = "instruqt-jacob"
-  source_image = "ubuntu-2204-jammy-v20221101a"
+  project_id   = "${var.project_id}"
+  source_image = "${var.source_image}"
   ssh_username = "root"
-  zone         = "us-central1-a"
-  image_name   = "instruqt-image-01"
-  disk_size    = "10"
+  zone         = "europe-west1-b"
+  image_name   = "${var.image_name}"
+  disk_size    = "${var.disk_size}"
 }
 
 build {
