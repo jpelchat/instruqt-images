@@ -32,5 +32,5 @@ jobs:
         run: ls -l
         
       - name: Packer Build
-        run: packer build packer.pkr.hcl --force
+        run: packer build packer.pkr.hcl -force
 
