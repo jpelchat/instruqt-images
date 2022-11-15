@@ -7,7 +7,6 @@
       "source_image": "ubuntu-2204-jammy-v20221101a",
       "ssh_username": "packer",
       "zone": "us-central1-a",
-      "image_name": "instruqt-image-01",
     }
   ],
   "provisioners": [
