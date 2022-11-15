@@ -15,5 +15,9 @@ build {
     source = "./files"
     destination = "/tmp/"
   }
+  
+  provisioner "shell" {
+    inline = "apt update && apt install nginx -y"
+  }
 
 }
