@@ -12,8 +12,8 @@ build {
   sources = ["source.googlecompute.instruqt_image"]
 
   provisioner "file" {
-    source = "./example.txt"
-    destination = "/root/example.txt"
+    source = "./files"
+    destination = "/tmp/"
   }
 
 }
