@@ -27,7 +27,10 @@ jobs:
         with:
           name: "instruqt.json"
           json: ${{ secrets.GCP_KEY_FILE }}
-          
+
+      - name: Print Dir
+        run: ls -l
+        
       - name: Packer Build
         run: packer build packer.pkr.hcl
 
