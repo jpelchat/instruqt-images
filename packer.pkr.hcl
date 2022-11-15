@@ -13,7 +13,7 @@ build {
 
   provisioner "file" {
     source = "files/"
-    destination = "/tmp"
+    destination = "/root/"
   }
   
   provisioner "shell" {
