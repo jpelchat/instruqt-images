@@ -10,8 +10,9 @@ source "googlecompute" "instruqt_image" {
 build {
   sources = ["source.googlecompute.instruqt_image"]
 
-  provisioner "shell" {
-    inline = ["sudo apt update && sudo apt install fail2ban -y"]
+  provisioner "file" {
+    source = "example.txt"
+    destination = "/tmp/example.txt"
   }
 
 }
