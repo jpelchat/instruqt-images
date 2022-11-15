@@ -29,5 +29,5 @@ jobs:
           json: ${{ secrets.GCP_KEY_FILE }}
 
       - name: Packer Build
-        run: packer build -force packer.pkr.hcl
+        run: packer build -force packer.pkr.hcl -var-file="variables.pkrvars.hcl"
 
