@@ -11,7 +11,7 @@ build {
   sources = ["source.googlecompute.instruqt_image"]
 
   provisioner "shell" {
-    inline = ["sudo apt update && sudo apt install docker.io"]
+    inline = ["sudo apt update && sudo apt install docker.io -y"]
   }
 
 }
